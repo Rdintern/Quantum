@@ -209,6 +209,7 @@ Measure-Command {
     Write-Host "Ran $($projectsToRun.Length) samples, skipped $($runBlockList.Length), $nFailed failed.";
 }
 
+
 if (-not $all_ok) {
     throw "At least one project failed to compile. Check the logs."
 }
